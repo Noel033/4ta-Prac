@@ -32,3 +32,36 @@ footer {
   padding: 2rem 0;
   margin-top: 4rem;
 }
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 300px;
+  }
+
+  .tournament-card {
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    height: 200px;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+}

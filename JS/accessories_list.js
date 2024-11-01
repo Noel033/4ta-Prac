@@ -1,3 +1,28 @@
+const AccessoryCard = ({ item }) => {
+  const [isAdded, setIsAdded] = React.useState(false);
+
+  return (
+    <div className="tournament-card p-4">
+      <img
+        src={item.imageUrl}
+        alt={item.name}
+        className="w-full h-48 object-cover rounded-lg mb-4"
+      />
+      <h3 className="text-lg font-bold mb-2">{item.name}</h3>
+      <p className="text-gray-400 mb-2">{item.description}</p>
+      <p className="text-xl text-indigo-400 mb-4">{item.price}</p>
+      <button
+        onClick={() => setIsAdded(true)}
+        className={`w-full ${
+          isAdded ? "bg-green-600" : "bg-indigo-600 hover:bg-indigo-700"
+        } py-2 rounded`}
+        disabled={isAdded}
+      >
+        {isAdded ? "Añadido" : "Añadir al carrito"}
+      </button>
+    </div>
+  );
+};
 const AccessoriesList = () => {
   const accessories = [
     {
@@ -49,19 +74,7 @@ const AccessoriesList = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {accessories.map((item) => (
-          <div key={item.id} className="tournament-card p-4">
-            <img
-              src={item.imageUrl}
-              alt={item.name}
-              className="w-full h-48 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-lg font-bold mb-2">{item.name}</h3>
-            <p className="text-gray-400 mb-2">{item.description}</p>
-            <p className="text-xl text-indigo-400 mb-4">{item.price}</p>
-            <button className="w-full bg-indigo-600 hover:bg-indigo-700 py-2 rounded">
-              Añadir al carrito
-            </button>
-          </div>
+          <AccessoryCard key={item.id} item={item} />
         ))}
       </div>
     </div>

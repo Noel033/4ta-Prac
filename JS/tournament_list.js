@@ -1,3 +1,32 @@
+const TournamentCard = ({ tournament }) => {
+  const [isRegistered, setIsRegistered] = React.useState(false);
+
+  return (
+    <div className="tournament-card p-6">
+      <img
+        src={tournament.imageUrl}
+        alt={tournament.game}
+        className="w-full h-48 object-cover rounded-lg mb-4"
+      />
+      <h3 className="text-xl font-bold mb-2">{tournament.game}</h3>
+      <div className="space-y-2">
+        <p className="text-indigo-400">Premio: {tournament.prize}</p>
+        <p>Fecha: {tournament.date}</p>
+        <p>Jugadores: {tournament.players}</p>
+        <p className="text-green-400">{tournament.status}</p>
+      </div>
+      <button
+        onClick={() => setIsRegistered(true)}
+        className={`mt-4 w-full ${
+          isRegistered ? "bg-green-600" : "bg-indigo-600 hover:bg-indigo-700"
+        } py-2 rounded`}
+        disabled={isRegistered}
+      >
+        {isRegistered ? "Inscrito" : "Inscribirse"}
+      </button>
+    </div>
+  );
+};
 const TournamentList = () => {
   const tournaments = [
     {
@@ -66,23 +95,7 @@ const TournamentList = () => {
       <h1 className="text-4xl font-bold text-center mb-12">TORNEOS ACTIVOS</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {tournaments.map((tournament) => (
-          <div key={tournament.id} className="tournament-card p-6">
-            <img
-              src={tournament.imageUrl}
-              alt={tournament.game}
-              className="w-full h-48 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">{tournament.game}</h3>
-            <div className="space-y-2">
-              <p className="text-indigo-400">Premio: {tournament.prize}</p>
-              <p>Fecha: {tournament.date}</p>
-              <p>Jugadores: {tournament.players}</p>
-              <p className="text-green-400">{tournament.status}</p>
-            </div>
-            <button className="mt-4 w-full bg-indigo-600 hover:bg-indigo-700 py-2 rounded">
-              Ver detalles
-            </button>
-          </div>
+          <TournamentCard key={tournament.id} tournament={tournament} />
         ))}
       </div>
     </div>
