@@ -1,0 +1,49 @@
+{
+  "tournaments": [
+    {
+      "id": 1,
+      "title": "Call of Duty:Warzone Caldera #6",
+      "game": "Call of Duty",
+      "type": "Battle Royale",
+      "format": "4v4",
+      "slots": {
+        "total": 192,
+        "filled": 192
+      },
+      "host": "La Guarida de Antibush",
+      "date": "oct 08, 6:00 PM",
+      "prize": "1200 USDC",
+      "image": "cod-warzone.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Torneos MLBB de HALLOWEEN",
+      "game": "MLBB",
+      "type": "TORNEO",
+      "format": "5V5",
+      "slots": {
+        "total": 192,
+        "filled": 130
+      },
+      "host": "La Guarida de Antibush",
+      "date": "oct 08, 6:00 PM",
+      "prize": "3000 USDC",
+      "image": "mlbb-halloween.jpg"
+    },
+    {
+      "id": 3,
+      "title": "DOTA 2",
+      "game": "The International Coneros",
+      "type": "TORNEO",
+      "format": "5v5",
+      "slots": {
+        "total": 192,
+        "filled": 180
+      },
+      "host": "La Guarida de Antibush",
+      "date": "nov 08, 6:00 PM",
+      "prize": "10000 USDC",
+      "image": "dota2.jpg"
+    }
+  ]
+}
