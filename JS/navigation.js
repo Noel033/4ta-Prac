@@ -6,6 +6,7 @@ const Navigation = () => {
           <div className="flex items-center gap-4">
             <img
               src="https://cdn.oddspedia.bg/media/es/1x1/sport-dota-2.jpg"
+              href="index.html"
               alt="Logo"
               className="navbar-logo h-12 md:h-16 w-auto"
             />
