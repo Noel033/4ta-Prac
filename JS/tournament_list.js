@@ -53,7 +53,7 @@ const TournamentList = () => {
       id: 1,
       game: "Mlbb",
       imageUrl: "https://i.ytimg.com/vi/YQXGI0KVRPE/maxresdefault.jpg",
-      prize: "$2,000 USD",
+      prize: "$10,000 USD",
       date: "25 de Diciembre",
       players: "100",
       status: "Inscripciones abiertas",
@@ -63,7 +63,7 @@ const TournamentList = () => {
       game: "CSGO",
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwwQBFWuMXQqy3pBkatTwdm9-V_xO123fHw&s.png",
-      prize: "$1500 USD",
+      prize: "$7,000 USD",
       date: "28 de Noviembre",
       players: "64",
       status: "Inscripciones abiertas",
@@ -83,7 +83,7 @@ const TournamentList = () => {
       game: "ROBLOX",
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv1RIxcRi40Pk3FzgcVRr80eMwfyYeeAtMUg&s.png",
-      prize: "$100000 USD",
+      prize: "$2,000 USD",
       date: "24 de Diciembre",
       players: "1000",
       status: "Inscripciones abiertas",
