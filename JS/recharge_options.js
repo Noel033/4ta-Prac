@@ -6,7 +6,7 @@ const RechargeOptions = () => {
       title: "Recarga para League of Legends",
       description: "Obtén RP para desbloquear campeones, skins y más.",
       imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiq4S7FFeIBKtBhJi7YNWlIWjexwa7E5iOnA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFI97kJNHpZJQMlT1yxcx4K6MNPjrh7atzfw&s",
       currency: "RP",
       options: [
         { amount: "650 RP", price: "$5 USD" },
@@ -19,7 +19,7 @@ const RechargeOptions = () => {
       name: "Dota 2",
       title: "Recarga para Dota 2",
       description: "Adquiere Cash para obtener artículos exclusivos.",
-      imageUrl: "https://i.ytimg.com/vi/OUKjurr49Dg/maxresdefault.jpg",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrpC35uYVYTE7WVggg6AJeuaRhiqMAUiCw7g&s",
       currency: "Cash",
       options: [
         { amount: "5000 Cash", price: "$50 USD" },
