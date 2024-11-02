@@ -1,4 +1,4 @@
-const FeaturedTournamentCard = ({ title, prize, date, players }) => {
+const FeaturedTournamentCard = ({ title, prize, date, players, imageUrl }) => {
   const [isRegistered, setIsRegistered] = React.useState(false);
 
   return (
@@ -9,6 +9,11 @@ const FeaturedTournamentCard = ({ title, prize, date, players }) => {
         <p>Fecha: {date}</p>
         <p>Jugadores: {players}</p>
       </div>
+      <img
+        src={imageUrl}
+        alt={`Imagen del torneo de ${title}`}
+        className="w-full h-48 object-cover rounded-lg mt-4"
+      />
       <button
         onClick={() => setIsRegistered(true)}
         className={`mt-6 w-full ${
@@ -32,20 +37,23 @@ const FeaturedTournaments = () => {
         <FeaturedTournamentCard
           title="League of Legends"
           prize="$1,000 USD"
-          date="15 de Diciem"
+          date="15 de Diciembre"
           players="128"
+          imageUrl="https://logos-world.net/wp-content/uploads/2020/11/League-of-Legends-Logo.png"
         />
         <FeaturedTournamentCard
           title="Valorant"
           prize="$500 USD"
-          date="20 de Noviem"
+          date="20 de Noviembre"
           players="64"
+          imageUrl="https://cdn.freelogovectors.net/wp-content/uploads/2023/01/valorant-logo-freelogovectors.net_.png"
         />
         <FeaturedTournamentCard
           title="CS:GO"
           prize="$750 USD"
-          date="25 de Diciem"
+          date="25 de Diciembre"
           players="32"
+          imageUrl="https://i.ytimg.com/vi/j16FpKWBvqc/maxresdefault.jpg"
         />
       </div>
     </div>
