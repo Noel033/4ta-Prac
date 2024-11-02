@@ -3,11 +3,11 @@ const Navigation = () => {
     <div>
       <header className="p-4">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4"
+           href="index.html">
             <img
               src="https://cdn.oddspedia.bg/media/es/1x1/sport-dota-2.jpg"
               alt="Logo"
-              href="index.html"
               className="navbar-logo h-12 md:h-16 w-auto"
             />
             <h1 className="text-xl md:text-2xl font-bold">
